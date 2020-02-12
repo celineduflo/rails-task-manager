@@ -1,0 +1,11 @@
+<h1><%= @task.title %></h1>
+<p><%= @task.details %></p><br/><br/>
+
+
+<p><%= @task.completed ? "<i class='fas fa-circle'></i>".html_safe : "<i class='far fa-circle'></i>".html_safe  %> <%= @task.completed ? "This task is completed" : "This task is not completed yet"  %></p><br/><br/>
+
+<p><%= link_to "Edit the task", edit_task_path %></p>
+
+<p><%= link_to "Back to list", tasks_path %></p>
+
+
